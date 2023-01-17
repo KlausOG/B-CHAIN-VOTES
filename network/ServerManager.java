@@ -19,12 +19,6 @@ import blockchain.Block;
  * 
  * Responsible for all the network communications in server side. 
  * 
- * In a new thread, it will run a loop accepting all the incoming clients 
- * and create a new instance of ServerHandler in a new thread reading incoming
- * message from connected clients. 
- * 
- * In the main thread, it provides a message handler handling all the incoming
- * messages. Also, it has interfaces serving ClusterManager.
  */
 public class ServerManager extends NetworkManager {
 	
@@ -164,7 +158,7 @@ public class ServerManager extends NetworkManager {
 			
 			e.printStackTrace();
 		}
-		System.out.println("Bye~");
+		System.out.println("Bye");
 	}
 
 }
