@@ -229,7 +229,6 @@ public class Main {
         cipher.init(Cipher.DECRYPT_MODE, sks);
 
         try {
-//    		System.out.println(sealedObject.getObject(cipher));
             return sealedObject.getObject(cipher);
         } catch (ClassNotFoundException | IllegalBlockSizeException | BadPaddingException e) {
             // TODO Auto-generated catch block
