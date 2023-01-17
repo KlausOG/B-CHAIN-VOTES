@@ -33,12 +33,6 @@ import static java.nio.file.attribute.PosixFilePermission.*;
  *
  * Responsible for all the network communications in client side.
  *
- * In a new thread, it will run a loop receiving messages sent from server and
- * dispatch it to the main thread to handle.
- *
- * In the main thread, it provides a message handler handling all the incoming
- * messages.
- *
  */
 public class ClientManager extends NetworkManager {
 
